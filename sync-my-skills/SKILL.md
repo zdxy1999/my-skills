@@ -20,7 +20,7 @@ Use when:
 | Platform | Default Path | Example |
 |----------|--------------|---------|
 | Claude Code | `~/.claude/skills/` | Local macOS/Linux |
-| OpenClaw (remote) | `/root/clawdbot/skills` | Remote server |
+| OpenClaw (remote) | `/root/.openclaw/workspace/skills/` | Remote server |
 
 ## Workflow
 
