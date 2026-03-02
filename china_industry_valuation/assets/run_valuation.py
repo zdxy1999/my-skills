@@ -289,7 +289,7 @@ def main():
     parser = argparse.ArgumentParser(description='申万行业估值分析执行脚本')
     parser.add_argument('--token', '-t', type=str, help='Tushare Token (不指定则使用环境变量或默认值)')
     parser.add_argument('--output', '-o', type=str, default='./output', help='输出目录路径 (默认 ./output)')
-    parser.add_argument('--cleanup-days', '-c', type=int, default=7, help='清理多少天前的旧文件 (默认 7)')
+    parser.add_argument('--cleanup-days', '-c', type=int, default=365, help='清理多少天前的旧文件 (默认 365)')
     args = parser.parse_args()
 
     # 设置 token

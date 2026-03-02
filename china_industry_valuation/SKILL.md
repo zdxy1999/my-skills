@@ -53,8 +53,8 @@ export TUSHARE_TOKEN="your_token_here"
    - 输出 CSV 文件到 `assets/output/` 目录
 
 3. **清理过期文件**
-   - 删除 7 天前的分析文件
-   - 保留最近 7 天的历史数据用于趋势分析
+   - 删除 365 天前的分析文件
+   - 保留最近一年的历史数据用于趋势分析
 
 4. **生成汇总报告**
    - 创建 `assets/output/valuation_report_YYYYMMDD.md` 汇总报告
@@ -93,7 +93,7 @@ python assets/run_valuation.py
 |------|--------|------|--------|
 | `--token` | `-t` | Tushare Token（不指定则使用环境变量或默认值） | - |
 | `--output` | `-o` | 输出目录路径 | `./output` |
-| `--cleanup-days` | `-c` | 清理多少天前的旧文件 | `7` |
+| `--cleanup-days` | `-c` | 清理多少天前的旧文件 | `365` |
 
 ### 汇总报告结构
 
